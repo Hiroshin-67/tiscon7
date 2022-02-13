@@ -97,7 +97,7 @@
           <input type="hidden" name="oldPrefectureId" id="oldPrefectureId" th:value="*{oldPrefectureId}"/>
         </tr>
         <tr>
-          <th>集荷元住所（市区町村以下）</th>
+          <th>集荷元住所（市区町村）</th>
           <td><span th:text="*{oldAddress}"></span></td>
           <input type="hidden" name="oldAddress" id="oldAddress" th:value="*{oldAddress}"/>
           <ul th:if="${#fields.hasErrors('oldAddress')}">
@@ -112,7 +112,7 @@
           <input type="hidden" name="newPrefectureId" id="newPrefectureId" th:value="*{newPrefectureId}"/>
         </tr>
         <tr>
-          <th>お届け先住所（市区町村以下）</th>
+          <th>お届け先住所（市区町村）</th>
           <td><span th:text="*{newAddress}"></span></td>
           <input type="hidden" name="newAddress" id="newAddress" th:value="*{newAddress}"/>
           <ul th:if="${#fields.hasErrors('newAddress')}">
