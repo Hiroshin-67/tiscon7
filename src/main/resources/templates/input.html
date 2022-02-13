@@ -53,7 +53,7 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="oldAddress">集荷元住所（市区町村以下）</label>
+          <label for="oldAddress">集荷元住所（市区町村）</label>
           <input type="text" id="oldAddress" name="oldAddress" th:field="*{oldAddress}"
                  class="form-control" value="新宿区西新宿1-1-1"/>
           <span class = "error_msg" th:if = "${#fields.hasErrors('oldAddress')}" th:errors = "*{oldAddress}">error!</span>
@@ -65,7 +65,7 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="newAddress">お届け先住所（市区町村以下）</label>
+          <label for="newAddress">お届け先住所（市区町村）</label>
           <input type="text" id="newAddress" name="newAddress" th:field="*{newAddress}" class="form-control"
                  value="札幌市南区1"/>
         </div>
