@@ -36,18 +36,12 @@ public class UserOrderForm {
     @Pattern(regexp = ".*[市区町村].*")
     private String oldAddress;
 
-    public String getChecktest() {
-        return oldAddress;
-    }
-
-    public void setChecktest(String oldAddress) {
-        this.oldAddress = oldAddress;
-    }
 
     @NotBlank
     private String newPrefectureId;
 
     @NotBlank(message="お届け先住所を入力してください")
+    @Pattern(regexp = ".*[市区町村].*")
     private String newAddress;
 
     @Numeric
