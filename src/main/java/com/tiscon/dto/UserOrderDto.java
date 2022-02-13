@@ -8,6 +8,8 @@ public class UserOrderDto {
 
     private String email;
 
+    private String movingDate;
+
     private String oldPrefectureId;
 
     private String oldAddress;
@@ -121,4 +123,6 @@ public class UserOrderDto {
     public void setWashingMachineInstallation(Boolean washingMachineInstallation) {
         this.washingMachineInstallation = washingMachineInstallation;
     }
+
+    public String getMovingDate() {return movingDate;}
 }

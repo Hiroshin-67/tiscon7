@@ -25,6 +25,10 @@ public class UserOrderForm {
     private String email;
 
     @NotBlank
+    private String movingDate;
+
+
+    @NotBlank
     private String oldPrefectureId;
 
     @NotBlank(message="集荷元住所を入力してください")
@@ -150,4 +154,7 @@ public class UserOrderForm {
     public void setWashingMachineInstallation(boolean washingMachineInstallation) {
         this.washingMachineInstallation = washingMachineInstallation;
     }
+
+
+    public String getMovingDate() {return movingDate;}
 }

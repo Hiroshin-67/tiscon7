@@ -38,6 +38,13 @@
           <label for="email">連絡先メールアドレス</label>
           <input type="text" id="email" name="email" th:field="*{email}" class="form-control" value="test@test.com"/>
         </div>
+
+        <div class="sub-title">引越し日</div>
+        <div class="form-group">
+          <input type="date" id="date" name="calendar" th:field="*{movingDate}" max="9999-12-31">
+        </div>
+
+
         <div class="sub-title">集荷元・お届け先</div>
         <div class="form-group">
           <label for="oldPrefectureId">集荷元住所（都道府県）</label>
