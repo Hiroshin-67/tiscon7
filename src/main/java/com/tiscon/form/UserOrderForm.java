@@ -166,5 +166,8 @@ public class UserOrderForm {
     }
 
 
+    public void setMovingDate(String movingDate) {
+        this.movingDate = movingDate;
+    }
     public String getMovingDate() {return movingDate;}
 }

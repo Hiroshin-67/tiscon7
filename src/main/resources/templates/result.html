@@ -45,6 +45,28 @@
         </tr>
         </tbody>
         </table>
+
+      <!-- 引越し日の表示を追加 -->
+      <div class="col-sm-12">
+        <div class="sub-title">引越し予定日</div>
+        <table class="table table-bordered">
+          <col span="1" style="background-color: #FFFFFF;">
+          <col span="2" style="background-color: #FFFFFF;">
+          <tbody>
+          <tr>
+            <th style="width: 40%">引越し予定日</th>
+            <td>
+              <span th:text="*{movingDate}" />
+            </td>
+            <input type="hidden" name="movingDate" id="movingDate" th:value="*{movingDate}"/>
+            <!-- <ul th:if="${#fields.hasErrors('movingDate')}">
+              <li th:each="err : ${#fields.errors('movingDate')}" th:text="${err}"></li>
+            </ul> -->
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="sub-title">集荷元・お届け先</div>
       <table class="table table-bordered">
         <col span="1" style="background-color: #FFFFFF;">
